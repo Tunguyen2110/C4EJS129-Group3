@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container-slider {
+    height: 500px;
+    max-width: 1800px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.bar{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55px;
+    padding: 10px;
+    min-height: 150px;
+    background: lightpink;
+    gap:10px;
+    top: 35%;
+    font-size: 35px;
+    align-items: center;
+    border:1px inherit black;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0 5px 5px 0;
+}
+.logo{width: 30px;}
+.logo:hover{transform: scale(1.2) ;}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+    transition: all .3s ease;
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+}
+
+[id^="slide"]:checked+.slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+
+.slide-1 {
+    background-image: url("https://source.unsplash.com/t7YycgAoVSw/1600x900");
+}
+
+.slide-2 {
+    background-image: url("https://source.unsplash.com/11H1SSVcIxc/1600x900");
+}
+
+.slide-3 {
+    background-image: url("https://source.unsplash.com/OlZ1nWLEEgM/1600x900");
+}
+
+.container-item {
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+}
+.dalat{
+width: 300px;
+padding: 20px 20px 0 20px;
+font-size: 30px;
+font-weight: bold;
+font-family: 'Dancing Script', cursive;
+border-bottom: 5px solid #333333;
+}
+.container-item-main {
+    flex: 1 1 70%;
+    border: 3px solid lightgrey;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 15px 0 15px 15px;
+    
+}
+
+.container-item-sidebar {
+    flex: 1 1 30%;
+    max-width: 250px;
+
+}
+
+.container-item-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: flex-start;
+    gap: 40px;
+    overflow: hidden;
+    block-size: fit-content;
+    
+}
+.card{width: 18em;margin-left: 10px;overflow: hidden;}
+
+
+.card-img-top{
+    min-height: 210px;
+    
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+.container-item-sidebar {
+    background-color: #f9f9f9;
+    border-radius: 0px 15px 15px 0;
+    padding: 30px;
+    transform: translate3d(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.container-item-sidebar-listing{
+    margin-bottom: 0;
+    padding-left:0 ;}
+ul {
+    list-style-type: none;
+   
+}
+
+.list {
+    text-decoration: none;
+    color: black;
+}
+
+.list:hover{
+    color: #33e9e9;
+    margin-left: 5px;
+    transition-duration: 0.5s;
+}
+
+li {
+    padding: 15px 15px 15px 5px;
+    border-top: 1px solid lightgray;
+    margin-left: 0;
+}
+
+h3 {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.xemthem{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid rgba(2, 0, 0, 0.5);
+    border-radius:8px ;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+.xemthem:hover{
+    font-size: larger;
+    border:1px inherit#33e9e9;
+    transition-duration: 0.3s;
+    background: #66ffee;
+    color: white;
+}
+    #myBtn {
+        
+        position: fixed; 
+        bottom: 20px; 
+        right: 30px;
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        color:#004993;
+        background: #004993; 
+        color: white; 
+        cursor: pointer; 
+        padding: 15px; 
+        width: 20px;
+        height: 20px;
+        border-radius: 50%; 
+        font-size: 18px; 
+        display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-sizing: content-box;
+      }
+      
+      #myBtn:hover {
+        background-color: #555; 
+      }
