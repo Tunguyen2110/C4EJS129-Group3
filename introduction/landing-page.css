@@ -9,6 +9,7 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: rgba(253, 226, 177,0.34);
 }
+
 #introvideo {
   /* position: fixed; */
   /* right: 0;
@@ -133,4 +134,22 @@ body {
 }
 .main-about-img {
   width: 50%;
+}
+
+
+/* style */
+
+.style-container {
+  width: 100%;
+}
+.style {
+  display: flex;
+  justify-content: space-around;
+}
+.style-content img {
+  max-width: 100%;
+}
+
+.style-content {
+  
 }
