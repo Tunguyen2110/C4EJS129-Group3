@@ -164,6 +164,7 @@ body {
 /* footer */
 
 .footer-bottom {
+  background-image: url('./media/footer/footer-bgi.jpg');
   width: 100%;
   display: flex;
   justify-content: space-around;
