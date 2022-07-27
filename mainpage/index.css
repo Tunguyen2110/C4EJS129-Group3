@@ -27,8 +27,8 @@ body {
   
   .navbar {
     display: flex;
-    z-index: 1;
-    position: fixed;
+    z-index: 999    ;
+    position: fixed !important;
     max-height: 80px;
     width: 100%;
     /* background-color: #3e4437; */
@@ -97,7 +97,7 @@ body {
     /* color: white; */
   }
   .btn-register {
-    background: rgb(178, 197, 178);
+    background: rgb(178, 197, 178) ;
     color: rgb(27, 39, 39);
   }
   .btn-register:hover {
@@ -182,12 +182,11 @@ body {
 .container-slide {
     position: relative;
     width: 100%;
-    max-height: 300px;
-    background-size: cover;
-    background-position: 50% 50%;
+    height: 300px;
+    background-size: contain;
+    background-position: 50% 10%;
     margin: auto;
-    overflow: hidden;
-
+    overflow:hidden;
 }
 
 .container-overlay-slide {
@@ -242,11 +241,20 @@ body {
     letter-spacing: 0.15em;
     margin-bottom: 0.5em;
     text-transform: uppercase;
+    width: 200px;
+    margin: auto;
+    padding: 20px;
+    font-size: 15px;
+    border-bottom: 5px solid #191919;
+    border-radius: 0 0 5px 5px;
 }
+
 
 .container-details p {
     color: #fff;
-    font-size: 0.8em;
+    font-size: 5em;
+    margin-top: 5px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .fadeIn-bottom {
@@ -255,7 +263,7 @@ body {
 
 .container-item {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -307,12 +315,16 @@ body {
     border: 1px solid rgba(7, 7, 7, 0.3);
     padding: 5px 20px;
     border-radius: 30px;
+    color: black;
+}
+.container-item-location-li:hover{
+    background: #6b8175;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    color: white;
 }
 
-.a-li {
-    text-decoration: none !important;
-    color: black !important;
-}
+
 
 .container-item-main {
     flex: 1 1 70%;
@@ -371,11 +383,13 @@ body {
     position: relative;
     z-index: 1;
     gap: 30px;
-    max-height: 500px;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
 }
-
+.container-item-sidebar-listing h3{
+    padding: 5px 10px;
+}
 .container-item-sidebar-listing_place {
     margin-bottom: 0;
     padding-left: 0;
@@ -417,11 +431,7 @@ body {
     margin-left: 0;
 } */
 
-h3 {
-    padding: 20px;
-    font-size: 15px;
-    border-bottom: 1px solid black;
-}
+
 
 .xemthem {
     display: flex;
@@ -444,6 +454,10 @@ h3 {
     transition-duration: 0.3s;
     background: #408480;
     color: white;
+}
+ 
+.siderbar-plc-hidden{
+    display: none;
 }
 
 #myBtn {
@@ -530,3 +544,32 @@ h3 {
 .about-us {
     list-style-type: none;
 }
+
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+  }
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.9);
+  }
