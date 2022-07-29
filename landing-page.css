@@ -10,6 +10,8 @@ font-family: 'Roboto', sans-serif; */
   Very nice a bitttttt dark night blue : #0A3A3F;
   PURPLE NAVY: rgb(71, 82, 140);
   Dark Blue-Gray: RGB: (102, 113, 168);
+  Light Pastel Purple: RGB: (171, 156, 209); Hex: #AB9CD1 ;
+
 
 
 
@@ -22,13 +24,13 @@ font-family: 'Roboto', sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 body {
-  background: rgb(252, 250, 206);
+  background: rgb(255, 255, 234);
   font-family: "Raleway", sans-serif;
   /* background-color: rgba(253, 226, 177, 0.34); */
+  scroll-behavior: smooth;
 }
 body hr {
   border-top: 2px dashed ;
@@ -57,27 +59,27 @@ body hr {
 }
 
 .navbar {
-  font-family: "EB Garamond", serif;
+  font-family: "Raleway", sans-serif;
   display: flex;
   z-index: 1;
   position: fixed;
-  max-height: 85px;
+  max-height: 80px;
   width: 100%;
   /* background-color: #3e4437; */
   /* background-color: rgba(17, 26, 13, 0.5); */
-  background-color: rgba(60, 77, 58, 0.8);
+  background-color: rgba(77, 78, 32,0.6);
   align-items: center;
 }
 
 .navbar-logo {
   width: 15%;
-  padding-left: 1%;
 }
 .navbar-logo img {
   /* height: 90%; */
   width: auto;
-  max-height: 76px;
-  padding-bottom: 6%;
+  max-height: 70px;
+  /* padding-bottom: 6%; */
+  padding: 0 1% 5% 5%;
 }
 /* center */
 
@@ -101,6 +103,10 @@ body hr {
   text-transform: uppercase;
   padding: 0 2%;
   cursor: pointer;
+}
+.menu-container a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu-container li:hover {
@@ -131,8 +137,9 @@ body hr {
   font-style: bold;
 }
 .btn-register {
-  background: rgba(128, 172, 220, 0.7);
-  color: rgb(27, 39, 39);
+  /* background: rgba(128, 172, 220, 0.7); */
+  background: rgb(71, 82, 140,0.7);
+  color: rgb(225, 240, 240);
 }
 .btn-register:hover {
   background: rgba(248, 154, 12, 0.7);
@@ -147,7 +154,7 @@ body hr {
 }
 .main-content {
   /* background-color: rgba(146, 172, 109, 0.3); */
-  background: rgba(255, 242, 198,0.6);
+  background: rgb(252, 250, 206);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -246,16 +253,29 @@ body hr {
 .footer-bottom {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   padding: 1% 2% 1% 2%;
-  color: rgb(71, 82, 140);
+  /* color: rgb(71, 82, 140); */
+  color: #0A3A3F;
   /* background: rgba(39, 50, 72,0.8); */
-  background-image: url('./media/footer/footer-bgi.jpg');
+  /* background-image: url('./media/footer/footer-bgi.jpg'); */
 }
 
 .footer-link {
   list-style-type: none;
 }
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100px;
+}
+/* .footer-link img {
+  width: 60%;
+  padding-left: 0;
+} */
+
 .footer-link a {
   text-decoration: none;
   color: #4d4e20;
@@ -265,5 +285,5 @@ body hr {
   font-size: larger;
 }
 .about-us {
-  list-style-type: none;
+  list-style-type: none;  
 }
