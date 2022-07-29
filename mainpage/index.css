@@ -393,11 +393,6 @@ body {
     background-color:rgba(146, 172, 109,0.3);
 }
 
-.container-item-sidebar {
-    flex: 1 1 30%;
-    max-width: 250px;
-
-}
 
 .container-item-main {
     display: flex;
@@ -555,6 +550,8 @@ body {
     max-height: 700px;
     display: flex;
     flex-direction: column;
+    flex: 1 1 30%;
+    max-width: 250px;
 }
 .container-item-sidebar-listing h3{
     padding: 5px 10px;
