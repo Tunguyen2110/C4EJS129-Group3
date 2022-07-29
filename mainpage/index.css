@@ -30,7 +30,7 @@ body {
 
   .video-intro{
     width: 100%;
-    height: 500px;
+    height: auto;
     object-fit: fill;
   }
   .navbar {
@@ -172,6 +172,7 @@ body {
     top: 51.5%;
     left: 33px;
     font-size: 15px;
+    font-weight: 500;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -544,7 +545,7 @@ body {
     transform: translate3d(0, 0, 0);
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    position: relative;
+    position: re;
     z-index: 1;
     gap: 30px;
     max-height: 700px;
