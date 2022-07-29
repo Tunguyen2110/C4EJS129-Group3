@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c259d6345f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <head class="header">
+        <div class="navbar">
+          <!-- Logo on the left side of the Navigator bar: -->
+          <div class="navbar-logo">
+            <img src="../media/Logo-Dalatne-05.svg" alt="Logo" />
+          </div>
+          <!-- main list of Nav-bar at the center -->
+          <!-- <div class="navbar-menu"> -->
+            <ul class="menu-container">
+              <li class="navbar-menu-container-list">Home</li>
+              <li class="navbar-menu-container-list">Features</li>
+              <li class="navbar-menu-container-list">Where to Go</li>
+              <li class="navbar-menu-container-list">About us</li>
+            </ul>
+          <!-- </div> -->
+  
+          <div class="navbar-login-form">
+            <button type="button" class="btn btn-login">Login</button>
+            <button type="button" class="btn btn-register">Register</button>
+            <button type="button" class="btn btn-checklist"><i class="bi bi-card-checklist"></i></button>
+          </div>
+        </div>
+
+        <div class="video-container">
+           
+            <video autoplay loop controls src="../media/dalathoanghon.mp4" class="video-intro">
+            </video>
+        </div>
+    </head>
+    <!-- end of navbar -->
+    <div class="cart">
+        <a href="" class="cart-shopping"><i class='bx bx-cart'></i></a>
+        <div class="circle-cart">0</div>
+    </div>
+    <div class="bar" id="bar">
+        <a href="" class="logo-box"> <img src="../media/spck/Facebook_Logo_(2019).png" class="logo"></a>
+        <a href="" class="logo-box"> <img src="../media/spck/Facebook_Messenger_logo_2020.svg.webp" class="logo"></a>
+        <a href="" class="logo-box"> <img src="../media/spck/Instagram_logo_2016.svg.webp" class="logo"></a>
+    </div>
+    <div style="font-size:30px;">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+    </div>
+
+    <div class="container">
+
+        <div class="container-slide">
+            <a href="" target="_blank">
+                <div class="container-overlay-slide"></div>
+                <img class="container-slide-img" src="https://anhdepfree.com/wp-content/uploads/2020/04/hinh-nen-4k-thien-nhien.jpg">
+                <div class="container-details fadeIn-bottom">
+                    <h3 class="container-title"><img src="../media/Logo-Dalatne-05.svg" alt="Logo" /></h3>
+                    <p class="container-text">Welcome to Dalatne</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="container-item-header">
+            <div class="container-item-header-left">
+                <p class="dalat">Đà Lạt</p>
+            </div>
+            <div class="container-item-header-right">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Khu vực
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Phường 1</a></li>
+                        <li><a class="dropdown-item" href="#">Phường 2</a></li>
+                        <li><a class="dropdown-item" href="#">Phường 3</a></li>
+                        <li><a class="dropdown-item" href="#">Phường 4</a></li>
+                        <li><a class="dropdown-item" href="#">Phường 5</a></li>
+                        <li><a class="dropdown-item" href="#">Phường 6</a></li>
+                        <li><a class="dropdown-item" href="#">Phường 7</a></li>
+                        <li><a class="dropdown-item" href="#">Phường 8</a></li>
+
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-item-location">
+            <ul class="container-item-location-ul">
+                <a href=""><li class="container-item-location-li">Phường 1</li></a>
+                <a href=""><li class="container-item-location-li">Phường 2</li></a>
+                <a href=""><li class="container-item-location-li">Phường 3</li></a>
+                <a href=""><li class="container-item-location-li">Phường 4</li></a>
+                <a href=""><li class="container-item-location-li">Phường 5</li></a>
+                <a href=""><li class="container-item-location-li">Phường 6</li></a>
+                <a href=""><li class="container-item-location-li">Phường 7</li></a>
+                <a href=""><li class="container-item-location-li">Phường 8</li></a>
+                <a href=""><li class="container-item-location-li">Phường 9</li></a>
+                <a href=""><li class="container-item-location-li">Phường 10</li></a>
+                <a href=""><li class="container-item-location-li">Phường 11</li></a>
+                <a href=""><li class="container-item-location-li">Phường 12</li></a>
+                <a href=""><li class="container-item-location-li">Xã Tà Nùng</li></a>
+                <a href=""><li class="container-item-location-li">Xã Xuân Thọ</li></a>
+                <a href=""><li class="container-item-location-li">Xã Xuân Trường</li></a>
+            </ul>
+        </div>
+        <div class="container-item">
+
+            <div class="container-item-main">
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Danh lam thắng cảnh - Phường 4</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title">Đường hầm điêu khắc Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> Phường 4 - Tp. Đà Lạt - Lâm
+                            Đồng</p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên - Phường 4</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title">Khu vui chơi Đà Lạt Wonderland</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 19 Đ. Hoa Hồng - Phường 4 -
+                            Tp. Đà Lạt - Lâm Đồng</p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Danh lam thắng cảnh - Phường 4</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title">Happy Hill Đà Lạt</h5>
+                        <br>
+                        <p class="card-location"><i class="fa-solid fa-location-dot">
+                        </i> Khu du lịch sinh thái - nhà
+                            hàng Đá Tiên - hồ Tuyền Lâm</p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Nhà hàng - Phường 4</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title">Rừng Thông Mơ Farm & Bistro</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> Đ. Hoa Hồng - Phường 4 - Tp.
+                            Đà Lạt - Lâm Đồng </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="next-page">
+                    123
+                </div>
+            </div>
+
+            <div class="container-item-sidebar">
+                <div class="container-item-sidebar-listing">
+                    <h3>Check-in</h3>
+                    <ul class="container-item-sidebar-listing_place">
+                        <li class="list-wrap">
+                            <a href="" class="list">Quay lại</a>
+                        </li>
+                        <li class="siderbar-plc">
+                            <a href="siderbar-plc" class="list">Quán cà phê</a>
+                        </li>
+                        <li class="siderbar-plc">
+                            <a href="siderbar-plc" class="list">Nhà hàng</a>
+                        </li>
+                        <li class="siderbar-plc">
+                            <a href="" class="list">Ẩm thực địa phương</a>
+                        </li>
+                        <li class="siderbar-plc">
+                            <a href="" class="list">Danh lam thắng cảnh</a>
+                        </li>
+                        <li class="siderbar-plc">
+                            <a href="" class="list">Khu vui chơi, công viên</a>
+                        </li>
+                        <div class="siderbar-plc-hidden">
+                            <li class="siderbar-plc">
+                                <a href="" class="list">Khu vui chơi, công viên</a>
+                            </li>
+                            <li class="siderbar-plc">
+                                <a href="" class="list">Khu vui chơi, công viên</a>
+                            </li>
+                        </div>
+                        
+                       
+                    </ul>
+                    <div class="xemthem">Xem thêm</div>
+                </div>
+                <div class="map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124928.467878862!2d108.38068173822299!3d11.90407018644478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112fef20988b1%3A0xad5f228b672bf930!2zVHAuIMSQw6AgTOG6oXQsIEzDom0gxJDhu5NuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1658419365894!5m2!1svi!2s"
+                        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <ul class="footer-link">
+                <li>
+                    <h4>Đà Lạt nè</h4>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li> ©copyright 2022 <b>Dalatne</b> | <br>
+                    <b><a href="#">Thanh Tung</a></b>, <b><a href="#">Linh</a></b>, <b><a href="#">Quynh Anh</a></b>,
+                    <b><a href="https://www.facebook.com/tu.berry.98">Anh Tu</a></b>
+                    <br>
+                    Stressly created with Depression
+                </li>
+            </ul>
+            <ul class="about-us">
+                <li>
+                    <h4>About Us</h4>
+                </li>
+                <li>We love Da Lat, that's all</li>
+                <li>Người ta cứ mãi đi tìm thành công ở SG, Hà Nội</li>
+                <li>Nhưng rồi ai cũng đến Đà Lạt để tìm bình yên</li>
+            </ul>
+        </div>
+        <div class='page'>
+            <div class='scroll scroll--simple'>
+              <div class='inner'></div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

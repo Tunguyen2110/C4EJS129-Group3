@@ -47,7 +47,7 @@ body hr {
 }
 
 .video-container {
-  background-image: url("./media/footer/footer-bgi.jpg");
+  /* background-image: url("./media/footer/footer-bgi.jpg");   */
   width: 100%;
   /* height: auto; */
   display: flex;
@@ -249,6 +249,8 @@ body hr {
   justify-content: space-around;
   padding: 1% 2% 1% 2%;
   color: rgb(71, 82, 140);
+  /* background: rgba(39, 50, 72,0.8); */
+  background-image: url('./media/footer/footer-bgi.jpg');
 }
 
 .footer-link {
