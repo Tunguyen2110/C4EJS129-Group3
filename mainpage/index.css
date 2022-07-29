@@ -430,6 +430,17 @@ body {
     overflow: hidden;
 }
 
+.next-page{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    width: 100px;
+    
+    background: red;
+    bottom: 0;
+}
 .container-item-sidebar {
     background-color: #f9f9f9;
     border-radius: 0px 0px 15px 0;
