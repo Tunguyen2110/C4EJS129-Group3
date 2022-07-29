@@ -23,7 +23,7 @@ bar = document.querySelector(".bar");
 cart = document.querySelector(".cart");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     bar.style.display = "flex";
     cart.style.display = "flex";
   } else {
