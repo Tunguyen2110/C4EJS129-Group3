@@ -434,7 +434,6 @@ body {
 
     width: 100px;
     
-<<<<<<< HEAD
     font-size: 30px;
     left: 47%;
     bottom: 0.2%;
@@ -474,8 +473,6 @@ body {
 }
 .next-page-right:hover .next-page-arr{
     color: white;
-=======
->>>>>>> parent of 7e5eb88 (234)
     background: red;
     bottom: 0;
 }
