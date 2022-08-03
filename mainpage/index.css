@@ -404,8 +404,7 @@ body {
     overflow: hidden;
     block-size: fit-content;
     justify-content: center;
-    margin-bottom: 20px;
-    padding-bottom: 40px;
+
 }
 
 .card {
@@ -413,72 +412,9 @@ body {
     margin-left: 10px;
     overflow: hidden;
     min-width: 286px;
-    position: relative;
 }
-.card-check{
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 30px;
-    display: flex;
-    background: #6aa84f;
-    color: white;
-    display: none;
-}
-.card-plus{
-    position: absolute;
-    bottom: 5%;
-    right: 20%;
-    box-sizing: border-box;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    display: none;
-}
-.card:hover .card-plus{
-    display:flex;
-}
-.card-plus:hover{
-    background: #6aa84f;
-    color: white;
-    transform: scale(1.5);
-    cursor: pointer;
-}
-
-.card-minus{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    box-sizing: border-box;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    display: none;
-}
-.card:hover .card-minus{
-    display:flex;
-}
-.card-minus:hover{
-    background: #FF1A1A;
-    color: white;
-    transform: scale(1.5);
-    cursor: pointer;
-}
-
 #card-footer{background:  #6b8175 !important;}
-#card-footer:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
+
 .card-img-top {
     min-height: 210px;
 
@@ -494,11 +430,11 @@ body {
     position: absolute;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: center;
 
-    width: 80px;
-    height: 40px;
+    width: 100px;
     
+<<<<<<< HEAD
     font-size: 30px;
     left: 47%;
     bottom: 0.2%;
@@ -538,6 +474,10 @@ body {
 }
 .next-page-right:hover .next-page-arr{
     color: white;
+=======
+    background: red;
+    bottom: 0;
+>>>>>>> parent of 7e5eb88 (234)
 }
 .container-item-sidebar {
     background-color: #f9f9f9;
@@ -660,9 +600,6 @@ body {
     .container-item-header {
         max-width: 866px;
     }
-    .next-page{
-        left: 46%;
-    }
 }
 
 @media only screen and (max-width:1200px) {
@@ -670,18 +607,12 @@ body {
         max-width: 686px;
         flex-direction: column;
     }
-    .next-page{
-        left: 45%;
-    }
-}@media only screen and (max-width:992px){
-    .next-page{bottom: 0.1%;}
 }
 @media only screen and (max-width:770px) {
     .container-item-sidebar {
         display: none;
     }
     .card{width: 25em;}
-    
 }
 @media only screen and (max-width:630px) {
     .bar{display: none;}
