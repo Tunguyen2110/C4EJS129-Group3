@@ -14,6 +14,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+<<<<<<< HEAD
+>>>>>>> parent of 7e5eb88 (234)
+=======
 >>>>>>> parent of 7e5eb88 (234)
     mybutton.style.display = "block";
     bar.style.display = "flex";
@@ -30,6 +33,7 @@ function topFunction() {
 }
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // {
 bar = document.querySelector(".bar");
@@ -54,6 +58,8 @@ function showupcheck() {
 function notshowupcheck(){
   cardcheck.style.display = "none";
 =======
+=======
+>>>>>>> parent of 7e5eb88 (234)
 {
 bar = document.getElementsById("bar");
 window.onscroll = function() {scrollFunction()};
@@ -64,5 +70,8 @@ function scrollFunction() {
     bar.style.display = "none";
   }
 }
+<<<<<<< HEAD
+>>>>>>> parent of 7e5eb88 (234)
+=======
 >>>>>>> parent of 7e5eb88 (234)
 }
