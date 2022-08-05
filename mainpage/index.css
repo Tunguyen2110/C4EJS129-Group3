@@ -100,10 +100,7 @@ body {
       font-weight: 400;
   }
   
-  .btn-login:hover {
-    /* background: #333; */
-    /* color: white; */
-  }
+
   .btn-register {
     background: rgb(178, 197, 178) ;
     color: rgb(27, 39, 39);
@@ -411,6 +408,9 @@ body {
     overflow: hidden;
     min-width: 286px;
     position: relative;
+}
+.card-location{
+    height: 50px;
 }
 .card-check{
     position: absolute;
