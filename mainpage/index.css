@@ -103,10 +103,7 @@ body {
       font-weight: 400;
   }
   
-  .btn-login:hover {
-    /* background: #333; */
-    /* color: white; */
-  }
+
   .btn-register {
     background: rgb(178, 197, 178) ;
     color: rgb(27, 39, 39);
@@ -431,10 +428,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-
     width: 100px;
-    
-<<<<<<< HEAD
     font-size: 30px;
     left: 47%;
     bottom: 0.2%;
@@ -474,10 +468,10 @@ body {
 }
 .next-page-right:hover .next-page-arr{
     color: white;
-=======
     background: red;
     bottom: 0;
->>>>>>> parent of 7e5eb88 (234)
+    background: red;
+    bottom: 0;
 }
 .container-item-sidebar {
     background-color: #f9f9f9;
