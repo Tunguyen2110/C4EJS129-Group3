@@ -25,6 +25,8 @@
     listBtnMinus[i].addEventListener('click', (e) => {
       listCardCheck[i].style.display = "none";
     })};
-  function loginClick(){
-    document.querySelector('body').style.background = 'white';
-  }
+
+    function change_background()
+    {
+       document.querySelector("body").style.background = 'red';
+    }

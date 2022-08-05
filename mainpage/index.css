@@ -2,11 +2,11 @@
 body {
     text-decoration: none;
     list-style-type: none;
-    background-color: rgba(253, 226, 177,0.34) !important;
+    /* background-color: rgba(253, 226, 177,0.34) !important; */
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-
+.bg-body{background:rgba(253, 226, 177,0.34)}
 
   
 .video-container {
@@ -208,12 +208,7 @@ form .data label{
   
   
   /* right  */
-  .navbar-login-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-  }
   .btn {
       color: white !important;
       font-size: medium;
