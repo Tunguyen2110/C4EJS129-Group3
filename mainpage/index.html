@@ -20,57 +20,49 @@
 
     <head class="header">
         <div class="navbar">
-          <!-- Logo on the left side of the Navigator bar: -->
-          <div class="navbar-logo">
-            <img src="../media/Logo-Dalatne-05.svg" alt="Logo" />
-          </div>
-          <!-- main list of Nav-bar at the center -->
-          <!-- <div class="navbar-menu"> -->
-            <ul class="menu-container">
-              <li class="navbar-menu-container-list">Home</li>
-              <li class="navbar-menu-container-list">Features</li>
-              <li class="navbar-menu-container-list">Where to Go</li>
-              <li class="navbar-menu-container-list">About us</li>
-            </ul>
-          <!-- </div> -->
-  
-          <div class="navbar-login-form">
-            <div class="login-center">
-                <input type="checkbox" id="show-login">
-                <label for="show-login" class="show-btn-login">Login</label>
-                <div class="login-container">
-                    <label for="show-login" class="close-btn-login fas fa-times" title="close"></label>
-                    <div class="login-head">
-                        Login Form
-                    </div>
-                    <form action="#">
-                        <div class="data">
-                          <label>Email or Phone</label>
-                          <input type="text" required>
-                        </div>
-              <div class="data">
-                          <label>Password</label>
-                          <input type="password" required>
-                        </div>
-              <div class="forgot-pass">
-              <a href="#">Forgot Password?</a></div>
-              <div class="btn">
-                          <div class="inner">
-              </div>
-              <button type="submit">login</button>
-                        </div>
-              <div class="signup-link">
-              Not a member? <a href="#">Signup now</a></div>
-              </form>
-                </div>
+            <!-- Logo on the left side of the Navigator bar: -->
+            <div class="navbar-logo">
+                <img src="../media/Logo-Dalatne-05.svg" alt="Logo" />
             </div>
-            <button type="button" class="btn btn-register">Register</button>
-            <button type="button" class="btn btn-checklist"><i class="bi bi-card-checklist"></i></button>
-          </div>
+            <!-- main list of Nav-bar at the center -->
+            <!-- <div class="navbar-menu"> -->
+            <ul class="menu-container">
+                <li class="navbar-menu-container-list">Home</li>
+                <li class="navbar-menu-container-list">Features</li>
+                <li class="navbar-menu-container-list">Where to Go</li>
+                <li class="navbar-menu-container-list">About us</li>
+            </ul>
+            <!-- </div> -->
+
+            <div class="navbar-login-form">
+                <button type="button" class="btn btn-login" onclick="openForm()">Login</button>
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <div class="left-login">
+                            <img src="../media/spck/ham2.jpg" class="form-img">
+                        </div>
+                        <div class="right-login">
+                            <h1>Login</h1>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()"><i class='bx bxs-x-circle'
+                                    style="color: red;"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="btn btn-register">Register</button>
+                <button type="button" class="btn btn-checklist"><i class="bi bi-card-checklist"></i></button>
+            </div>
         </div>
 
         <div class="video-container">
-           
+
             <video autoplay loop controls src="../media/dalathoanghon.mp4" class="introvideo">
             </video>
         </div>
@@ -80,7 +72,7 @@
         <a href="" class="cart-shopping"><i class='bx bx-cart'></i></a>
         <div class="circle-cart">0</div>
     </div>
-    <div class="bar" >
+    <div class="bar">
         <a href="" class="logo-box"> <img src="../media/spck/Facebook_Logo_(2019).png" class="logo"></a>
         <a href="" class="logo-box"> <img src="../media/spck/Facebook_Messenger_logo_2020.svg.webp" class="logo"></a>
         <a href="" class="logo-box"> <img src="../media/spck/Instagram_logo_2016.svg.webp" class="logo"></a>
@@ -93,7 +85,8 @@
         <div class="container-slide">
             <a href="" target="_blank">
                 <div class="container-overlay-slide"></div>
-                <img class="container-slide-img" src="https://anhdepfree.com/wp-content/uploads/2020/04/hinh-nen-4k-thien-nhien.jpg">
+                <img class="container-slide-img"
+                    src="https://anhdepfree.com/wp-content/uploads/2020/04/hinh-nen-4k-thien-nhien.jpg">
                 <div class="container-details fadeIn-bottom">
                     <h3 class="container-title"><img src="../media/Logo-Dalatne-05.svg" alt="Logo" /></h3>
                     <p class="container-text">Welcome to Dalatne</p>
@@ -105,7 +98,7 @@
             <div class="container-item-header-left">
                 <p class="dalat">Đà Lạt</p>
             </div>
-            <div class="container-item-header-right">
+            <!-- <div class="container-item-header-right">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -145,25 +138,55 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="container-item-location">
             <ul class="container-item-location-ul">
-                <a href=""><li class="container-item-location-li">Phường 1</li></a>
-                <a href=""><li class="container-item-location-li">Phường 2</li></a>
-                <a href=""><li class="container-item-location-li">Phường 3</li></a>
-                <a href=""><li class="container-item-location-li">Phường 4</li></a>
-                <a href=""><li class="container-item-location-li">Phường 5</li></a>
-                <a href=""><li class="container-item-location-li">Phường 6</li></a>
-                <a href=""><li class="container-item-location-li">Phường 7</li></a>
-                <a href=""><li class="container-item-location-li">Phường 8</li></a>
-                <a href=""><li class="container-item-location-li">Phường 9</li></a>
-                <a href=""><li class="container-item-location-li">Phường 10</li></a>
-                <a href=""><li class="container-item-location-li">Phường 11</li></a>
-                <a href=""><li class="container-item-location-li">Phường 12</li></a>
-                <a href=""><li class="container-item-location-li">Xã Tà Nùng</li></a>
-                <a href=""><li class="container-item-location-li">Xã Xuân Thọ</li></a>
-                <a href=""><li class="container-item-location-li">Xã Xuân Trường</li></a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 1</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 2</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 3</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 4</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 5</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 6</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 7</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 8</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 9</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 10</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 11</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Phường 12</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Xã Tà Nùng</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Xã Xuân Thọ</li>
+                </a>
+                <a href="">
+                    <li class="container-item-location-li">Xã Xuân Trường</li>
+                </a>
             </ul>
         </div>
         <div class="container-item">
@@ -179,9 +202,9 @@
                         <p class="card-location"><i class="fa-solid fa-location-dot"></i> Phường 4 - Tp. Đà Lạt - Lâm
                             Đồng</p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
 
@@ -194,9 +217,9 @@
                         <p class="card-location"><i class="fa-solid fa-location-dot"></i> 19 Đ. Hoa Hồng - Phường 4 -
                             Tp. Đà Lạt - Lâm Đồng</p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
 
@@ -207,14 +230,14 @@
                         <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
                         <h5 class="card-title">Happy Hill Đà Lạt</h5>
                         <p class="card-location"><i class="fa-solid fa-location-dot">
-                        </i> Khu du lịch sinh thái - nhà
-                        hàng Đá Tiên - hồ Tuyền Lâm</p>
-                    <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                    <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                    <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                    <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                            </i> Khu du lịch sinh thái - nhà
+                            hàng Đá Tiên - hồ Tuyền Lâm</p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
+                    </div>
                 </div>
-            </div>
 
                 <div class="card">
                     <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
@@ -225,9 +248,9 @@
                         <p class="card-location"><i class="fa-solid fa-location-dot"></i> Đ. Hoa Hồng - Phường 4 - Tp.
                             Đà Lạt - Lâm Đồng </p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
 
@@ -241,9 +264,9 @@
                             Tp. Đà Lạt - Lâm Đồng
                         </p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
 
@@ -256,9 +279,9 @@
                         <p class="card-location"><i class="fa-solid fa-location-dot"></i> Tp. Đà Lạt - Lâm Đồng
                         </p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
                 <div class="card">
@@ -271,40 +294,9 @@
                             Tp. Đà Lạt - Lâm Đồng
                         </p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="card-type"> Khu vui chơi, công viên</div>
-                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
-                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
-                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
-                            Tp. Đà Lạt - Lâm Đồng
-                        </p>
-                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="card-type"> Khu vui chơi, công viên</div>
-                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
-                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
-                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
-                            Tp. Đà Lạt - Lâm Đồng
-                        </p>
-                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
 
@@ -318,9 +310,24 @@
                             Tp. Đà Lạt - Lâm Đồng
                         </p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
 
@@ -334,9 +341,9 @@
                             Tp. Đà Lạt - Lâm Đồng
                         </p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
 
@@ -350,17 +357,33 @@
                             Tp. Đà Lạt - Lâm Đồng
                         </p>
                         <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
-                        <div class="card-plus" ><i class='bx bx-plus-circle'></i></div>
-                        <div class="card-minus" ><i class='bx bx-minus-circle'></i></div>
-                        <div class="card-check"><i class='bx bx-checkbox-checked' ></i></div>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-type"> Khu vui chơi, công viên</div>
+                        <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
+                        <h5 class="card-title"> Vùng Đất Cổ Tích Fairytale Land Đà Lạt</h5>
+                        <p class="card-location"><i class="fa-solid fa-location-dot"></i> 1D Hoàng Văn Thụ - phường 5 -
+                            Tp. Đà Lạt - Lâm Đồng
+                        </p>
+                        <a href="#" class="btn btn-primary" id="card-footer">Xem thêm</a>
+                        <div class="card-plus"><i class='bx bx-plus-circle'></i></div>
+                        <div class="card-minus"><i class='bx bx-minus-circle'></i></div>
+                        <div class="card-check"><i class='bx bx-checkbox-checked'></i></div>
                     </div>
                 </div>
                 <div class="next-page">
                     <div class="next-page-left">
-                       <a href="#" class="next-page-arr"><i class='bx bx-chevron-left' ></i></a>
+                        <a href="#" class="next-page-arr"><i class='bx bx-chevron-left'></i></a>
                     </div>
                     <div class="next-page-right">
-                        <a href="#" class="next-page-arr"><i class='bx bx-chevron-right' ></i></a>
+                        <a href="#" class="next-page-arr"><i class='bx bx-chevron-right'></i></a>
                     </div>
                 </div>
             </div>
@@ -387,7 +410,7 @@
                         <li class="sidebar-plc">
                             <a href="" class="list">Khu vui chơi, công viên</a>
                         </li>
-                        <div class="sidebar-plc-hidden" >
+                        <div class="sidebar-plc-hidden">
                             <li class="sidebar-plc">
                                 <a href="" class="list">Khu vui chơi, công viên</a>
                             </li>
@@ -395,11 +418,11 @@
                                 <a href="" class="list">Khu vui chơi, công viên</a>
                             </li>
                         </div>
-                        
-                       
+
+
                     </ul>
                     <div class="xemthem" onclick="xemthem_sidebar()">Xem thêm</div>
-                    
+
                 </div>
                 <div class="map"><iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124928.467878862!2d108.38068173822299!3d11.90407018644478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112fef20988b1%3A0xad5f228b672bf930!2zVHAuIMSQw6AgTOG6oXQsIEzDom0gxJDhu5NuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1658419365894!5m2!1svi!2s"
@@ -413,38 +436,43 @@
         <hr>
         <img class="footer-logo" src="../media/footer/Logo-Dalatne-05-footer.svg" alt="logo" style="max-width: 50%;">
 
-    <footer>
+        <footer>
 
-        <div class="footer-bottom">
-            <ul class="footer-link">
-                <li>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li> © Copyright 2022 <b>Dalatne</b> | <br>
-                    <b><a href="#">Thanh Tung</a></b>, <b><a href="#">Linh</a></b>, <b><a href="#">Quynh Anh</a></b>, <b><a href="https://www.facebook.com/tu.berry.98">Anh Tu</a></b>
-                    <br>
-                    Stressly created with Depression</li>
+            <div class="footer-bottom">
+                <ul class="footer-link">
+                    <li>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li> © Copyright 2022 <b>Dalatne</b> | <br>
+                        <b><a href="#">Thanh Tung</a></b>, <b><a href="#">Linh</a></b>, <b><a href="#">Quynh
+                                Anh</a></b>, <b><a href="https://www.facebook.com/tu.berry.98">Anh Tu</a></b>
+                        <br>
+                        Stressly created with Depression
+                    </li>
                     <hr>
-                <li class="thanks">
-                    Special thanks to my colleague <br>
-                    <a href="https://www.instagram.com/tvhiep.lettering/"><i class="bi bi-instagram"></i>@tvhiep.lettering</a><br>
-                    for the beautiful Dalatne Logo lettering
-                </li>
+                    <li class="thanks">
+                        Special thanks to my colleague <br>
+                        <a href="https://www.instagram.com/tvhiep.lettering/"><i
+                                class="bi bi-instagram"></i>@tvhiep.lettering</a><br>
+                        for the beautiful Dalatne Logo lettering
+                    </li>
 
-            </ul>
-            <ul class="about-us">
-                <li><h4>About Us</h4></li>
-                <li>We love Da Lat, that's all</li>
-                <li>Người ta cứ mãi đi tìm thành công ở SG, Hà Nội</li>
-                <li>Nhưng rồi ai cũng đến Đà Lạt để tìm bình yên</li>
-            </ul>
-        </div>
-    </footer>
-    <script src="./index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+                </ul>
+                <ul class="about-us">
+                    <li>
+                        <h4>About Us</h4>
+                    </li>
+                    <li>We love Da Lat, that's all</li>
+                    <li>Người ta cứ mãi đi tìm thành công ở SG, Hà Nội</li>
+                    <li>Nhưng rồi ai cũng đến Đà Lạt để tìm bình yên</li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
