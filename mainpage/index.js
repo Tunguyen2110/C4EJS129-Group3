@@ -53,10 +53,27 @@ function xemthem_sidebar() {
 
 } 
 
-function openForm() {
+function openFormLogin() {
   document.getElementById("myForm").style.display = "block";
+  document.getElementById("myForm-register").style.display = "none";
 }
 
-function closeForm() {
+function closeFormLogin() {
   document.getElementById("myForm").style.display = "none";
+}
+function openFormRegister() {
+  document.getElementById("myForm-register").style.display = "block";
+  document.getElementById("myForm").style.display = "none";
+}
+
+function closeFormRegister() {
+  document.getElementById("myForm-register").style.display = "none";
+}
+function switchToRegister(){
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById("myForm-register").style.display = "block";
+}
+function switchToLogin(){
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById("myForm-register").style.display = "none";
 }

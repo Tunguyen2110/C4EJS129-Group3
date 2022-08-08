@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@900&family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&family=Rubik:wght@700&display=swap');
+
 body {
     text-decoration: none;
     list-style-type: none;
@@ -104,12 +105,13 @@ body {
     float: right;
     padding-right: 1%;
 }
+
 /* right  */
 .navbar-login-form {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 
 
@@ -121,18 +123,19 @@ body {
     font-weight: 400;
 }
 
-.btn-login{}
-.form-popup{
+
+.form-popup {
     display: none;
     position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
     z-index: 10000;
     border: 3px solid #f1f1f1;
-    
+
 }
+
 .form-container {
     max-width: 800px;
     padding: 20px;
@@ -140,45 +143,57 @@ body {
     display: flex;
     gap: 50px;
     font-family: 'Oleo Script Swash Caps', cursive;
-  }
-  .form-img{
+}
+
+.form-img-login {
     width: 400px;
     height: 300px;
-  }
-  .form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 250px;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
-  }
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
     background-color: #ddd;
     outline: none;
-  }
-  .form-container .btn {
+}
+
+.form-container .btn {
     background-color: #007bff;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     opacity: 0.8;
-  }
-  .form-container p {
+}
+
+.form-container p {
     display: inline;
     font-family: 'Lobster', cursive;
-  }
-  .form-container a{
+}
+
+.form-container a {
     font-family: 'Lobster', cursive;
     color: blue !important;
-  }
-  .form-container a:hover{
+}
+
+.form-container a:hover {
     cursor: pointer;
     text-decoration: underline !important;
-  }
-  .form-container .cancel {
+}
+
+.form-container .cancel {
     background-color: inherit;
     width: 0;
     height: 0;
@@ -188,27 +203,121 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  }
+}
 
-  .form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
     opacity: 1;
-  }
+}
+
 .btn-login:hover {
     background: rgba(51, 51, 51, 0.5);
-    color: black ;
+    color: black;
     font-style: bold;
     border: 1px solid white;
-  }
-  .btn-register {
+}
+
+.form-popup-register {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    border: 3px solid #f1f1f1;
+}
+.form-container-register {
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    gap: 50px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+.left-register{order: 2;}
+.form-img-register{
+    width: 400px;
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.right-register{order: 1;}
+.form-container-register input[type=text],
+.form-container-register input[type=password] {
+    width: 250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container-register input[type=text]:focus,
+.form-container-register input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container-register .btn {
+    background-color: #ffae19;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container-register p {
+    display: inline;
+    font-family: 'Lobster', cursive;
+}
+
+.form-container-register a {
+    font-family: 'Lobster', cursive;
+    color: blue !important;
+}
+
+.form-container-register a:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+.form-container-register .cancel {
+    background-color: inherit;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-container-register .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+.btn-register {
     /* background: rgba(128, 172, 220, 0.7); */
-    background: rgb(71, 82, 140,0.7) !important;
+    background: rgb(71, 82, 140, 0.7) !important;
     color: rgb(225, 240, 240) !important;
-  }
-  .btn-register:hover {
-    background: rgba(248, 154, 12, 0.7) !important ;
+}
+
+.btn-register:hover {
+    background: rgba(248, 154, 12, 0.7) !important;
     color: black !important;
     /* background: rgb(228, 124, 51); */
-  }
+}
 
 #myBtn {
 
@@ -462,10 +571,12 @@ body {
     padding-left: 0;
     margin-bottom: 0;
 }
-.container-item-location a{
+
+.container-item-location a {
     text-decoration: none;
     width: 110px;
 }
+
 .container-item-location-li {
     display: inline-block;
     margin: 10px;
@@ -510,11 +621,12 @@ body {
 }
 
 .card {
-    width: 18em;
+    width: 18.1em;
     margin-left: 10px;
     overflow: hidden;
     min-width: 286px;
     position: relative;
+    border: none !important;
 }
 
 .card-location {
@@ -590,6 +702,7 @@ h5 {
 
 #card-footer {
     background: #6b8175 !important;
+    border: 1px solid white !important;
 }
 
 #card-footer:hover {
@@ -607,6 +720,7 @@ h5 {
     transform: scale(1.1);
     transition: all .3s ease;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .next-page {
@@ -785,7 +899,7 @@ h5 {
 
 
 @media only screen and (max-width:1400px) {
-  
+
 
     .next-page {
         left: 46%;
@@ -793,7 +907,7 @@ h5 {
 }
 
 @media only screen and (max-width:1200px) {
-   
+
 
     .next-page {
         left: 45%;
@@ -811,6 +925,14 @@ h5 {
         display: none;
     }
 
+    .form-img {
+        display: none;
+    }
+
+    .form-container {
+        gap: 0;
+    }
+
     .card {
         width: 25em;
     }
@@ -821,12 +943,23 @@ h5 {
     .bar {
         visibility: hidden;
     }
-    #btn{visibility: hidden;}
-    .cart{visibility: hidden;}
-    #myBtn{visibility: hidden;}
+
+    #btn {
+        visibility: hidden;
+    }
+
+    .cart {
+        visibility: hidden;
+    }
+
+    #myBtn {
+        visibility: hidden;
+    }
+
     .container-item-main {
         justify-content: center;
     }
+
     .card {
         width: 25em;
     }
