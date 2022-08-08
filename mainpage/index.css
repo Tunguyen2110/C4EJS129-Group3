@@ -2,7 +2,7 @@
 body {
     text-decoration: none;
     list-style-type: none;
-    /* background-color: rgba(253, 226, 177,0.34) !important; */
+    background-color: rgba(253, 226, 177,0.34) !important;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
@@ -95,7 +95,7 @@ body {
 .show-btn-login, .login-container{
     position: absolute;
     top: 60%;
-    left: 80%;
+    left: 78%;
     transform: translate(-50%, -50%);
 }
 
@@ -699,7 +699,7 @@ h5{height: 50px;}
     border-bottom: 1px solid lightgray;
 }
 
-.siderbar-plc {
+.sidebar-plc {
     padding: 15px 0px 15px 5px;
     border-bottom: 1px solid lightgray;
     margin-left: 0;
@@ -725,7 +725,6 @@ h5{height: 50px;}
     text-align: center;
     margin: auto;
     margin-top: 15px;
-
 }
 
 .xemthem:hover {
@@ -735,8 +734,9 @@ h5{height: 50px;}
     background: #408480;
     color: white;
 }
- 
-.siderbar-plc-hidden{
+
+
+.sidebar-plc-hidden{
     display: none;
 }
 
