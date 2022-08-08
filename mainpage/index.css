@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@900&family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&family=Rubik:wght@700&display=swap');
 body {
     text-decoration: none;
     list-style-type: none;
@@ -164,7 +165,18 @@ body {
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-    
+  }
+  .form-container p {
+    display: inline;
+    font-family: 'Lobster', cursive;
+  }
+  .form-container a{
+    font-family: 'Lobster', cursive;
+    color: blue !important;
+  }
+  .form-container a:hover{
+    cursor: pointer;
+    text-decoration: underline !important;
   }
   .form-container .cancel {
     background-color: inherit;
