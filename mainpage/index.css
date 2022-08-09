@@ -615,7 +615,7 @@ body {
     gap: 20px;
     overflow: hidden;
     block-size: fit-content;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 20px;
     padding-bottom: 40px;
 }
