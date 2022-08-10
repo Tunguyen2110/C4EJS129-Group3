@@ -630,6 +630,9 @@ body {
     border: none !important;
 }
 
+.card-type{
+    height: 50px;
+}
 .card-location {
     height: 50px;
 }
