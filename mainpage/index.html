@@ -37,7 +37,7 @@
             <div class="navbar-login-form">
                 <button type="button" class="btn btn-login" onclick="openFormLogin()">Login</button>
                 <div class="form-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
+                    <form  class="form-container">
                         <div class="left-login">
                             <img src="../media/spck/ham2.jpg" class="form-img-login">
                         </div>
@@ -50,7 +50,7 @@
                             <label for="psw" style="display:block"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
 
-                            <button type="submit" class="btn">Login</button>
+                            <button type="submit" class="btn" id="login_submit">Login</button>
                             <p> Chưa có tài khoản,</p>
                             <a onclick="switchToRegister()">đăng ký ngay.</a>
                             <button type="button" class="btn cancel" onclick="closeFormLogin()"><i class='bx bxs-x-circle'
@@ -60,7 +60,7 @@
                 </div>
                 <button type="button" class="btn btn-register" onclick="openFormRegister()">Register</button>
                 <div class="form-popup-register" id="myForm-register">
-                    <form action="/action_page.php" class="form-container-register">
+                    <form  class="form-container-register">
                         <div class="left-register">
                             <img src="../media/spck/lac_tien_goi_3.jpg" class="form-img-register">
                         </div>
@@ -68,12 +68,12 @@
                             <h1>Register</h1>
 
                             <label for="email" style="display:block"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <input type="text" placeholder="Enter Email" id="email+" required>
 
                             <label for="psw" style="display:block"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <input type="password" placeholder="Enter Password" id="psw+" required>
 
-                            <button type="submit" class="btn">Register</button>
+                            <button type="submit" class="btn" id="register_submit">Register</button>
                             <p> Đã có tài khoản,</p>
                             <a onclick="switchToLogin()">đăng nhập ngay.</a>
                             <button type="button" class="btn cancel" onclick="closeFormRegister()"><i class='bx bxs-x-circle'
@@ -167,7 +167,7 @@
         <div class="container-item-location">
             <ul class="container-item-location-ul">
                 <a href="">
-                    <li class="container-item-location-li">Phường 1</li>
+                    <li class="container-item-location-li" id="li-1" onclick="ttat()">Phường 1</li>
                 </a>
                 <a href="">
                     <li class="container-item-location-li">Phường 2</li>
@@ -220,7 +220,7 @@
                 <div class="card" style="margin-left:-10px">
                     <img src="../media/spck/ham2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <div class="card-type"> Danh lam thắng cảnh - Phường 4</div>
+                        <div class="card-type" > Danh lam thắng cảnh - Phường 4</div>
                         <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
                         <h5 class="card-title">Đường hầm điêu khắc Đà Lạt</h5>
                         <p class="card-location"><i class="fa-solid fa-location-dot"></i> Phường 4 - Tp. Đà Lạt - Lâm
@@ -235,7 +235,7 @@
                 <div class="card">
                     <img src="../media/spck/_MG_7157.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <div class="card-type"> Khu vui chơi, công viên - Phường 4</div>
+                        <div class="card-type" > Khu vui chơi, công viên - Phường 4</div>
                         <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
                         <h5 class="card-title">Khu vui chơi Đà Lạt Wonderland</h5>
                         <p class="card-location"><i class="fa-solid fa-location-dot"></i> 19 Đ. Hoa Hồng - Phường 4 -
@@ -250,7 +250,7 @@
                 <div class="card">
                     <img src="../media/spck/tuyenlam.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <div class="card-type"> Danh lam thắng cảnh - Phường 4</div>
+                        <div class="card-type" > Danh lam thắng cảnh - Phường 4</div>
                         <div class="card-price"><i class="fa-solid fa-tag"></i> Price</div>
                         <h5 class="card-title">Happy Hill Đà Lạt</h5>
                         <p class="card-location"><i class="fa-solid fa-location-dot">

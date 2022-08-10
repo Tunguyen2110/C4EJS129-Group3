@@ -899,7 +899,8 @@ h5 {
 
 
 @media only screen and (max-width:1400px) {
-
+    .container-item-main{
+        justify-content: center;}
 
     .next-page {
         left: 46%;
@@ -907,7 +908,7 @@ h5 {
 }
 
 @media only screen and (max-width:1200px) {
-
+    
 
     .next-page {
         left: 45%;
@@ -915,6 +916,9 @@ h5 {
 }
 
 @media only screen and (max-width:992px) {
+    .container-item-main{
+        justify-content: center;
+    }
     .next-page {
         bottom: 0.1%;
     }

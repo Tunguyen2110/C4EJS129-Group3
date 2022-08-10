@@ -1,16 +1,16 @@
 {
   mybutton = document.getElementById("myBtn");
   bar = document.querySelector(".bar");
-  cart = document.querySelector(".cart");
+  // cart = document.querySelector(".cart");
   window.onscroll = function () { scrollFunction() };
   function scrollFunction() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       bar.style.display = "flex";
-      cart.style.display = "flex";
+      // cart.style.display = "flex";
       mybutton.style.display = "block";
     } else {
       bar.style.display = "none";
-      cart.style.display = "none";
+      // cart.style.display = "none";
       mybutton.style.display = "none";
     }
   }
@@ -77,3 +77,93 @@ function switchToLogin(){
   document.getElementById("myForm").style.display = "block";
   document.getElementById("myForm-register").style.display = "none";
 }
+
+//login
+const listUser = [
+  {
+    email: 'abcxyz@gmail.com',
+    password: '123456',
+  },
+  {
+    email: 'test@gmail.com',
+    password: '123456',
+  },
+  {
+    email: 'test1@gmail.com',
+    password: '123456',
+  },
+  {
+    email: 'test2@gmail.com',
+    password: '123456',
+  },
+];
+
+document.getElementById('login_submit').onclick = function(){
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('psw').value;
+
+  if (email.length <10 || email.includes('#')) {
+    alert('email chưa đúng định dạng');
+    return;
+  }
+  if (password.length < 6) {
+    alert('password chưa hợp lệ');
+    return;
+  }
+
+  let checkEmail = false;
+  for (let user of listUser) {
+    if (user.email === email) {
+      if (user.password === password) {
+        alert('Đăng nhập thành công');
+        window.location = './homepage.html';
+      } else {
+        alert('Password sai');
+      }
+
+      checkEmail = true;
+    }
+  }
+  if (checkEmail === false) {
+    alert('Email chưa được đăng ký');
+  }
+};
+window.onload = function() {
+	if (localStorage) {
+	  document.getElementById('register_submit').addEventListener('submit', function() {
+	      let name = document.getElementById('email+').value;
+	      localStorage.setItem('name', JSON.stringify(listUser));
+	  });
+	}
+}
+localStorage.foo = 'bar';
+localStorage.foo = 'bar';
+localStorage.setItem("listUser", JSON.stringify(listUser));
+// const places= document.getElementsByClassName("card-type");
+const tt=[1,2,3];
+console.log(tt);
+const att=tt.filter(function(value){
+  return value=="1";
+});
+console.log(att);
+
+
+
+//filter
+// const nodes=document.querySelectorAll('.card-type');
+// console.log(nodes);
+// const texts = [...nodes].map(n => n.textContent);
+// console.log(texts);
+// const filtered = [...nodes].filter(n => n.textContent.includes('Phường 4'));
+// console.log(filtered);
+// const li=document.querySelector('.container-item-location-li');
+// console.log(li)
+// document.querySelector('.container-item-location-li').onclick(function(){
+//   document.querySelectorAll('.card').style.display = "none";
+//   document.write('${filtered}')
+
+// })
+
+// function ttat(){
+//   document.querySelectorAll('.card').style.display = "none";
+// }
