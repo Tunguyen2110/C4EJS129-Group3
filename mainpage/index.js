@@ -273,10 +273,10 @@ console.log(stringHTML);
 
 
 
-const filtered=data.filter(function(str){
+const filtered = data.filter(str=>{
   return str.includes("Phường 4");
 });
-console.log(str);
+console.log(filtered);
 
 // const nodes=document.querySelectorAll('.card-type');
 // console.log(nodes);
