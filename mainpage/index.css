@@ -604,6 +604,7 @@ body {
     margin-bottom: 50px;
     border-radius: 0px 0 15px 15px;
     background-color: rgba(146, 172, 109, 0.3);
+    min-height: 800px;
 }
 
 

@@ -150,12 +150,12 @@ console.log(att);
 
 
 //filter
-// const nodes=document.querySelectorAll('.card-type');
-// console.log(nodes);
-// const texts = [...nodes].map(n => n.textContent);
-// console.log(texts);
-// const filtered = [...nodes].filter(n => n.textContent.includes('Phường 4'));
-// console.log(filtered);
+const nodes=document.querySelectorAll('.card-type');
+console.log(nodes);
+const texts = [...nodes].map(n => n.textContent);
+console.log(texts);
+const filtered = [...nodes].filter(n => n.textContent.includes('Phường 4'));
+console.log(filtered);
 // const li=document.querySelector('.container-item-location-li');
 // console.log(li)
 // document.querySelector('.container-item-location-li').onclick(function(){
@@ -164,6 +164,10 @@ console.log(att);
 
 // })
 
-// function ttat(){
-//   document.querySelectorAll('.card').style.display = "none";
-// }
+function ttat(){
+ let card_hide= document.querySelectorAll('.card');
+ card_hide.forEach(card => {
+card.style.display ="none";
+ });
+ document.querySelectorAll('.card').innerHTML = parent.forEach.filtered;
+}
