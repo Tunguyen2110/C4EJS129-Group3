@@ -228,12 +228,11 @@ body hr {
   /* background: rgba(188, 252, 213, 0.7); */
 }
 .main-content {
-  /* background-color: rgba(146, 172, 109, 0.3); */
   background: rgb(252, 250, 206);
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 .main-about {
   display: flex;
