@@ -213,17 +213,20 @@ body {
 
 
   @media (max-width: 576px) {
-    .navbar ul {
-      display: none;
+    .navbar {
+      max-height: 45px;
     }
+    .navbar ul {
+      font-size: 0.45rem;
+    }
+  
     .navbar-login-form {
       display: none;
     }
-    
+  
     .navbar-logo {
-      width: 400px;
-      padding: 0%;
-      margin: 0;
+      height: fit-content;
+      margin-top: -1rem;
     }
   
     /* mid main center  */
@@ -241,6 +244,7 @@ body {
       flex-direction: column;
       width: 100%;
     }
+
     .main-about {
       display: flex;
       flex-direction: column;
@@ -262,6 +266,7 @@ body {
     .main-about-img {
       width: 100%;
     }
+    
     /* end of 3 images  */
     .style-container {
       flex-direction: column;
@@ -308,13 +313,18 @@ body {
       text-align: left;
       font-size: 0.7rem;
     }
+
   }
+
   
   
   @media (min-width: 577px) and (max-width: 768px) {
+    .navbar {
+      max-height: 45px;
+    }
     .navbar ul {
-      display: none;
-      width: 20%;
+      /* display: none; */
+      font-size: 1em ;
     }
   
     .navbar-login-form {
@@ -326,9 +336,8 @@ body {
     
     
     .navbar-logo {
-      width: 50%;
-      padding: 0%;
-      margin: 0;
+      height: fit-content;
+      margin-top: -1rem;
     }
   
     /* mid main center  */
@@ -415,12 +424,13 @@ body {
   }
   @media (min-width: 769px ) and (max-width: 992px) {
     .navbar ul {
-      /* display: none; */
       width: 60%;
-      font-size: 0.8rem;
+      font-size: 1em;
     }
+
     .navbar img {
-      width: 90%;
+      height: 80%;
+      margin-top: -0.7rem;
     }
   
     .navbar-login-form {
@@ -428,12 +438,9 @@ body {
     }
     .btn-login{
       margin-right: 1%;
+      margin-bottom: 1rem;
     }
-    
-    
-    .navbar-logo {
-      width: 20%;
-    }
+
   
     /* mid main center  */
   
