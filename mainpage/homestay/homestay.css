@@ -27,10 +27,7 @@ body {
     padding-left: 0;
     margin-bottom: 0;
 }
-.coffee {
-  background-color: #4d4e20;
-  color: white;
-}
+
 
 .container-item-location a {
     text-decoration: none;
@@ -83,7 +80,9 @@ body {
 
 /*END of sort and filter CSS */
 
-
+h5 {
+  text-transform: capitalize;
+}
 
 .main-container {
     /* display flex and wrap */
@@ -108,7 +107,9 @@ body {
     color: #0A3A3F;
     transform: scale(0.8);
 }
-
+.card p {
+  text-transform: capitalize;
+}
 .card a:after {
     /* I copied this shit so idk what it means */
     content: attr(title);
